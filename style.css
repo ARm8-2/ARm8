@@ -301,6 +301,32 @@ body {
 
 .card-item:after {
     content: attr(data-year);
+    position: absolute;
+    top: 0;
+    left: 28px;
+    line-height: 0.6;
+    font-size: 11px;
+    text-align: right;
+    text-indent: -35px;
+    color: rgba(134, 134, 134, 0.7);
+    background: linear-gradient(to bottom, #e0e0e0 0%, #cacaca 100%);
+}
+
+.card-item-year {
+    position: relative;
+    padding-left: 60px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    z-index: 1;
+}
+
+.card-item-year:last-child {
+    padding-bottom: 5px;
+}
+
+
+.card-item-year:after {
+    content: attr(data-year);
     width: 10px;
     position: absolute;
     top: 0;
