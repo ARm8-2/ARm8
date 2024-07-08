@@ -7,7 +7,7 @@
 body {
     color: #202020;
     font-family: "Jost", sans-serif;
-    background-image: url("resources/background.jpg");
+    background-image: url("resources/background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -33,6 +33,12 @@ body {
     box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
     -ms-overflow-style: none;
     scrollbar-width: none;
+}
+
+@media (min-width: 769px) {
+    .card {
+        width: 400px;
+    }
 }
 
 .card::-webkit-scrollbar {
